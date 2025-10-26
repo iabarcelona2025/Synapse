@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creature Design - Creative Portfolio</title>
+    <meta name="description" content="3D creature design showcasing organic modeling and texturing techniques">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="styles/pieza.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">PORTFOLIO</a>
+                <a href="index.html" class="back-btn">Back to Portfolio</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="project-header fade-in">
+            <div class="container">
+                <h1 class="project-title">Creature Design</h1>
+                <p class="project-subtitle">3D Modeling & Character Art</p>
+                <p class="project-description">
+                    A detailed exploration of organic creature design, focusing on anatomy,
+                    texture work, and believable character development. This project showcases
+                    advanced sculpting techniques and procedural texturing workflows.
+                </p>
+            </div>
+        </section>
+
+        <nav class="projects-navigation">
+            <div class="buttons">
+                <a href="index.html">&lt;</a>
+                <a href="index.html">#</a>
+                <a href="project-architecture.html">&gt;</a>
+            </div>
+        </nav>
+        
+        <section class="project-gallery">
+            <div class="container">
+                <div class="main-image fade-in">
+                    <img src="assets/images/Samurai.jpg" alt="Creature Design - Full View">
+                </div>
+
+                <div class="project-details">
+                    <div class="detail-section fade-in">
+                        <h3>Project Overview</h3>
+                        <p>This creature design project explores the intersection of fantasy and realism,
+                            creating a believable character through careful attention to anatomy, surface details,
+                            and material properties.</p>
+
+                        <h3 style="margin-top: 30px;">Techniques Used</h3>
+                        <ul>
+                            <li>Digital Sculpting</li>
+                            <li>Retopology</li>
+                            <li>UV Mapping</li>
+                            <li>Procedural Texturing</li>
+                            <li>Subsurface Scattering</li>
+                            <li>Environmental Lighting</li>
+                        </ul>
+                    </div>
+
+                    <!--<div class="detail-section fade-in">
+                        <h3>Technical Details</h3>
+                        <p>Created using industry-standard tools and workflows, this project demonstrates
+                            proficiency in modern 3D production pipelines.</p>
+
+                        <h3 style="margin-top: 30px;">Software Stack</h3>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Kling</span>
+                            <span class="tech-tag">ZBrush</span>
+                            <span class="tech-tag">Substance Painter</span>
+                            <span class="tech-tag">Photoshop</span>
+                        </div>
+
+                        <h3 style="margin-top: 30px;">Timeline</h3>
+                        <p>Concept to completion: 6 weeks</p>
+                        <p>Modeling: 2 weeks</p>
+                        <p>Texturing: 2 weeks</p>
+                        <p>Lighting & Rendering: 2 weeks</p>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-projects">
+            <div class="container">
+                <h2 class="section-title">Related Projects</h2>
+                <div class="related-grid">
+                    <a href="project-architecture.html" class="related-item fade-in">
+                        <img src="assets/portfolio-house-CMIevJ2u.jpg" alt="Architecture Visualization">
+                        <div class="related-item-info">
+                            <h3 class="related-item-title">Modern Architecture</h3>
+                            <p class="related-item-category">Visualization</p>
+                        </div>
+                    </a>
+                    <a href="project-portrait.html" class="related-item fade-in">
+                        <img src="assets/portfolio-portrait-Ong92Nzu.jpg" alt="Digital Portrait">
+                        <div class="related-item-info">
+                            <h3 class="related-item-title">Digital Portrait</h3>
+                            <p class="related-item-category">Character Art</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = Math.random() * 0.3 + 's';
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach((item) => {
+            observer.observe(item);
+        });
+    </script>
+</body>
+
+</html>
