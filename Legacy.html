@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Portfolio - Dark Edition</title>
+  <meta name="description" content="Minimalist portfolio showcasing creative work with dark aesthetic">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="styles/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Menú fijo negro -->
+<header class="top-nav">
+  <div class="container header-content">
+    <a href="#" class="logo">
+  <img src="assets/logo.svg" alt="Synapse Logo" />
+</a>
+
+
+    <nav>
+      <ul>
+        <li><a href="#AI Generated">AI Generated</a></li>
+        <li><a href="#Legacy">+</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Sección del hero con video -->
+<section class="hero-section">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="assets/videos/header-video.mp4" type="video/mp4">
+    Tu navegador no soporta video en HTML5.
+  </video>
+
+  <div class="video-overlay"></div>
+
+  <div class="hero-content">
+    <h1>AI PROMPTING / GENERATIVE WORKS</h1>
+    <p>su titulo aqui</p>
+    <!-- Scroll indicator -->
+<div class="scroll-indicator"></div>
+  </div>
+</section>
+
+
+
+<!-- Burger menu -->
+<div class="burger-menu" id="burgerMenu">
+  <div class="burger-line"></div>
+  <div class="burger-line"></div>
+  <div class="burger-line"></div>
+</div>
+
+<!-- Mobile Navigation -->
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#AI Generated">AI Generated</a></li>
+    <li><a href="#Legacy Shots">+</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<main>
+  <section class="intro-section fade-in">
+    <div class="container">
+<!--<h1 class="intro-title">The human persists in the noise. The unpredictable takes shape</h1>-->
+      <p class="intro-subtitle">When the human persists in the noise, the unpredictable takes shape.</p>
+      
+  </section>
+
+  <section class="portfolio-section" id="AI Generated">
+    <div class="container">
+      <!--<h2 class="section-title">Featured Work</h2>-->
+      <div class="portfolio-grid">
+        <a href="project-creature.html" class="portfolio-item fade-in">
+          <img src="assets/images/Stained.jpg" alt="3D Creature Design">
+          <div class="portfolio-item-info">
+            <h3 class="portfolio-item-title">Creature Design</h3>
+            <p class="portfolio-item-category">3D Modeling</p>
+          </div>
+        </a>
+        <a href="project-architecture.html" class="portfolio-item fade-in">
+          <img src="assets/images/Asics.jpg" alt="Architectural Visualization">
+          <div class="portfolio-item-info">
+            <h3 class="portfolio-item-title">Modern Architecture</h3>
+            <p class="portfolio-item-category">Visualization</p>
+          </div>
+        </a>
+        <a href="project-portrait.html" class="portfolio-item fade-in">
+          <img src="assets/portfolio-portrait-Ong92Nzu.jpg" alt="Portrait Art">
+          <div class="portfolio-item-info">
+            <h3 class="portfolio-item-title">Digital Portrait</h3>
+            <p class="portfolio-item-category">Character Art</p>
+          </div>
+        </a>
+        <a href="project-infographic.html" class="portfolio-item fade-in">
+          <img src="assets/images/Hsbc.jpg" alt="Information Design">
+          <div class="portfolio-item-info">
+            <h3 class="portfolio-item-title">Info Graphics</h3>
+            <p class="portfolio-item-category">Data Visualization</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--<section class="categories-section" id="categories">
+    <div class="container">
+      <h2 class="section-title">Explore Categories</h2>
+      <div class="categories-grid">
+        <a href="#" class="category-item fade-in" id="motion">Motion Graphics</a>
+        <a href="#" class="category-item fade-in" id="static">Static Design</a>
+        <a href="#" class="category-item fade-in">3D Modeling</a>
+        <a href="#" class="category-item fade-in">Visualization</a>
+        <a href="#" class="category-item fade-in">Branding</a>
+        <a href="#" class="category-item fade-in">Experiential</a>
+      </div>
+    </div>
+  </section>-->
+</main>
+
+<section id="about" class="full-section">
+  <h2>About</h2>
+  <p>Creative professional specializing AI generative videos, AI motion design, and visual storytelling. Passionate about pushing the boundaries of visual communication</p>
+</section>
+
+<section id="services" class="full-section">
+  <h2>Services</h2>
+        <p>AI Generated content</p>
+        <p>Brand Design</p>
+        <p>Digital Art</p>
+        <p>Sound</p>
+</section>
+
+<section id="contact" class="full-section">
+    <div class="contact-container">
+      <h2>Contact</h2>
+      <form id="contact-form" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="contact-info">
+        <p><strong></strong> <a href="mailto:mdominguez@gmail.com"></a></p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="form-response"></div>
+  </section>
+  
+<!--<footer id="contact">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section" id="about">
+        <h3>About</h3>
+        <p>Creative professional specializing AI generative videos, AI motion design, and visual storytelling. Passionate about pushing the boundaries of visual communication.</p>
+      </div>
+      <div class="footer-section" id="services">
+        <h3>Services</h3>
+        <p><a href="#">AI Generated content</a></p>
+        <p><a href="#">Brand Design</a></p>
+        <p><a href="#">Digital Art</a></p>
+        <p><a href="#">Sound</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p><a href="mailto:mdominguez@gmail.com">mdominguez@gmail.com</a></p>
+        <p><a href="tel:+34 645 795 080">+34 645 795 080</a></p>
+        <p><a href="https://es.linkedin.com/in/manueldominguezdelaosa/es">LinkedIn</a></p>
+        <p><a href="https://www.instagram.com/dommanuel/?hl=es">Instagram</a></p>
+      </div>-->
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025, All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<p id="scrollFade">When the human persists in the noise, the unpredictable takes shape.</p>
+    </div>
+
+<script>
+  const fadeEl = document.getElementById('scrollFade');
+
+  window.addEventListener('scroll', () => {
+    const rect = fadeEl.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // Cuando la frase entra en el 75% inferior de la pantalla
+    if (rect.top < windowHeight * 0.75) {
+      fadeEl.classList.add('visible');
+    } else {
+      fadeEl.classList.remove('visible');
+    }
+  });
+
+  // Burger menu functionality
+  const burgerMenu = document.getElementById('burgerMenu');
+  const mobileNav = document.getElementById('mobileNav');
+
+  burgerMenu.addEventListener('click', () => {
+    burgerMenu.classList.toggle('active');
+    mobileNav.classList.toggle('active');
+  });
+
+  // Close mobile nav when clicking on a link
+  const mobileNavLinks = mobileNav.querySelectorAll('a');
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      burgerMenu.classList.remove('active');
+      mobileNav.classList.remove('active');
+    });
+  });
+
+  // Close mobile nav when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!burgerMenu.contains(e.target) && !mobileNav.contains(e.target)) {
+      burgerMenu.classList.remove('active');
+      mobileNav.classList.remove('active');
+    }
+  });
+</script>
+
+</body>
+</html>
