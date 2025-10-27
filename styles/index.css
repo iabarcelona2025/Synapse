@@ -457,3 +457,28 @@ html {
 #scrollFade.visible {
   opacity: 1;
 }
+
+/* === SECCIONES VERTICALES A PANTALLA COMPLETA === */
+.full-section {
+  min-height: 80vh; /* ocupa toda la altura visible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente */
+  align-items: center; /* centra horizontalmente */
+  text-align: center;
+  padding: 40px;
+  background-color: #0a0a0a; /* o el color que prefieras */
+  border-bottom: 1px solid #1a1a1a; /* separador sutil entre secciones */
+}
+
+.full-section h2 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.full-section p {
+  font-size: 1.1rem;
+  color: #aaa;
+  max-width: 700px;
+}
