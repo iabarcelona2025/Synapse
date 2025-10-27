@@ -118,7 +118,7 @@ body {
 /* === SCROLL INDICATOR === */
 .scroll-indicator {
   width: 2px;
-  height: 40px;
+  height: 60px;
   background: white;
   z-index: 2; /* sobre el video */
   margin: 2rem auto;
