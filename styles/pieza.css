@@ -334,10 +334,14 @@ main {
   position: relative;
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
-video {
+
+.video-container video {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  display: block;
 }
