@@ -81,11 +81,11 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
-  transition: opacity 0.3s;
+  transition: color 0.4s;
 }
 
 .top-nav nav a:hover {
-  opacity: 0.6;
+  color: #ffff;
 }
 
 
