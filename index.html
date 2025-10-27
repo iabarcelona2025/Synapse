@@ -144,13 +144,32 @@
 </section>
 
 <section id="contact" class="full-section">
-  <h2>Contact</h2>
-        <p><a href="mailto:mdominguez@gmail.com">mdominguez@gmail.com</a></p>
-        <p><a href="tel:+34 645 795 080">+34 645 795 080</a></p>
-        <p><a href="https://es.linkedin.com/in/manueldominguezdelaosa/es">LinkedIn</a></p>
-        <p><a href="https://www.instagram.com/dommanuel/?hl=es">Instagram</a></p>
-</section>
+    <div class="contact-container">
+      <h2>Contact</h2>
+      <form id="contact-form" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
 
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="contact-info">
+        <p><strong></strong> <a href="mailto:mdominguez@gmail.com"></a></p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="form-response"></div>
+  </section>
   
 <!--<footer id="contact">
   <div class="container">
