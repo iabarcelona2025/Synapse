@@ -336,8 +336,8 @@ footer {
 }
 
 .mobile-nav a::before {
-  content: '// ';
-  opacity: 0.3;
+  content: '· ';
+  opacity: 0.8;
   transition: opacity 0.3s ease;
 }
 
