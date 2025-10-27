@@ -120,6 +120,7 @@ body {
   width: 2px;
   height: 40px;
   background: white;
+  z-index: 2; /* sobre el video */
   margin: 2rem auto;
   animation: scrollPulse 2s infinite;
 }
