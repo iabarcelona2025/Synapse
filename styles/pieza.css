@@ -345,3 +345,21 @@ main {
   height: auto;
   display: block;
 }
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* relación 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px; /* opcional, estilo suave */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3); /* opcional */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
