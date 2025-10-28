@@ -361,3 +361,20 @@ main {
 .video-container[data-aspect="classic"] iframe {
   aspect-ratio: 4 / 3;
 }
+
+.video-text {
+    max-width: 100%; /* se ajusta al ancho del video */
+    margin-top: 20px; /* separación de 20px sobre el video */
+    text-align: justify; /* justificado a izquierda y derecha */
+    text-justify: inter-word; /* para navegadores que lo soporten */
+    padding: 0 20px; /* opcional: espacio lateral dentro del contenedor */
+    color: #fff; /* texto visible sobre video */
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+
+.video-text h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1rem; /* reduce el tamaño del título */
+}
