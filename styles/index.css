@@ -407,7 +407,7 @@ footer {
 /* ===== HERO VIDEO ===== */
 .hero-section {
   position: relative;
-  height: calc(100vh - 80px); /* Pantalla completa menos menú */
+  height: calc(85vh - 20px); /* Pantalla completa menos menú */
   margin-top: 80px; /* Espacio para que no tape menú */
   overflow: hidden;
 }
