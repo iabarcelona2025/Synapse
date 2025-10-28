@@ -407,6 +407,13 @@ footer {
 .fade-in {
     opacity: 0;
     animation: fadeIn 0.8s ease forwards;
+    pointer-events: auto;
+    transition: none;
+}
+
+.fade-in.show {
+    opacity: 1;
+    pointer-events: auto; /* <- permite clicks */
 }
 
 @keyframes fadeIn {
@@ -443,16 +450,17 @@ footer {
     z-index: -1;
 }
 
-/* Línea decorativa encima del menú fijo */
-.top-nav::before {
+/* Línea encima del menú */
+.navbar::before {
     content: "";
+    display: block;
+    height: 20px; /* altura de la línea */
+    width: 100%;
+    background-color: #ff9f1c; /* color cálido similar a Tilda, cambia si quieres */
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #362961; /* color cálido */
-    z-index: 2000; /* encima del menú */
+    z-index: 2;
 }
 
 html {
@@ -595,4 +603,44 @@ html {
     .contact-container {
         padding: 40px 30px;
     }
+}
+
+#videoModal {
+    display: none
+    pointer-events: none; /* que no capture clicks mientras está oculto */
+}
+
+.modal {
+    display: none; /* oculto por defecto */
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex; /* flexbox */
+    justify-content: center; /* centra horizontal */
+    align-items: center; /* centra vertical */
+}
+
+.modal-content {
+    width: 80%;
+    max-width: 900px;
+    position: relative;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 ratio */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
