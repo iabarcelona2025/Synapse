@@ -191,33 +191,28 @@
 
 </section>
 
-<section id="contact" class="full-section">
-    <div class="contact-container">
+<section id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-left">
       <h2>Contact</h2>
-      <form id="contact-form" class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
-
+      <form class="contact-form" action="mailto:tuemail@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message" required></textarea>
         <button type="submit">Send</button>
       </form>
-
-      <div class="contact-info">
-        <p><strong></strong> <a href="mailto:mdominguez@gmail.com"></a></p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
     </div>
 
-    <div id="form-response"></div>
-  </section>
+    <div class="contact-right">
+      <p class="contact-text">Let’s connect — ideas, collaborations, or just conversation.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!--<footer id="contact">
   <div class="container">
