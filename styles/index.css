@@ -658,3 +658,140 @@ html {
     margin: 0 auto;
     max-width: 900px; /* evita que se estire demasiado en pantallas grandes */
 }
+/* --- CONTACT SECTION (Two-Column Minimalist Style) --- */
+#contact {
+    background:
+    /* patrón de líneas diagonales semi-transparente */
+        repeating-linear-gradient(
+            45deg,
+            rgba(128, 128, 128, 0.45) 0,
+            rgba(128, 128, 128, 0.15) 20px,
+            rgba(34, 30, 77, 0.01) 20px,
+            rgba(34, 30, 77, 0.01) 40px
+        ),
+        /* degradado violeta hacia la derecha */
+            linear-gradient(to left, rgba(34, 30, 77, 0.9) 10%, #362961 100%);
+
+    background-blend-mode: overlay;
+    padding: 100px 0;
+    color: #f1f1f1;
+}
+
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+}
+
+.contact-left h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #f5f5f5;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: transparent;
+    border: 1px solid #444;
+    padding: 12px;
+    color: #f1f1f1;
+    font-size: 0.9rem;
+    border-radius: 0;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #888;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background: transparent;
+    border: 1px solid #666;
+    color: #f1f1f1;
+    padding: 12px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #f1f1f1;
+    color: #111;
+    border-color: #f1f1f1;
+}
+
+/* --- RIGHT SIDE --- */
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contact-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 300px;
+    color: #ccc;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #f1f1f1;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #888;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 800px) {
+    .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .contact-right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-text {
+        max-width: none;
+    }
+}
