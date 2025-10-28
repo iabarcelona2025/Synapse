@@ -605,11 +605,6 @@ html {
     }
 }
 
-#videoModal {
-    display: none
-    pointer-events: none; /* que no capture clicks mientras está oculto */
-}
-
 .modal {
     display: none; /* oculto por defecto */
     position: fixed;
