@@ -1,218 +1,324 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creative Portfolio - Dark Edition</title>
-  <meta name="description" content="Minimalist portfolio showcasing creative work with dark aesthetic">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link href="styles/others.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Creative Portfolio - Dark Edition</title>
+        <meta
+            name="description"
+            content="Minimalist portfolio showcasing creative work with dark aesthetic"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link href="styles/others.css" rel="stylesheet" />
+    </head>
 
-<body>
+    <body>
+        <!-- Menú fijo negro -->
+        <header class="top-nav">
+            <div class="container header-content">
+                <a href="#" class="logo">
+                    <img src="assets/logo.svg" alt="Synapse Logo" />
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#AI">AI Generated</a></li>
+                        <li><a href="index.html#shot">+</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-<!-- Menú fijo negro -->
-<header class="top-nav">
-  <div class="container header-content">
-    <a href="#" class="logo">
-  <img src="assets/logo.svg" alt="Synapse Logo" />
-</a>
+        <!-- Burger menu -->
+        <div class="burger-menu" id="burgerMenu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
 
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html#AI">AI Generated</a></li>
+                <li><a href="index.html#shot">+</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
 
-    <nav>
-      <ul>
-          <li><a href="index.html#AI">AI Generated</a></li>
-          <li><a href="index.html#shot">+</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+        <main>
+            <section class="intro-section fade-in">
+                <div class="container">
+                    <p class="intro-subtitle">OTHER WORKS</p>
+                </div>
+            </section>
 
-      </ul>
-    </nav>
-  </div>
-</header>
+            <section class="portfolio-section" id="AI Generated">
+                <div class="container">
+                    <div class="portfolio-grid">
+                        <!-- Recuadro 1 -->
+                        <a
+                            href="#"
+                            class="portfolio-item fade-in"
+                            data-video="video1"
+                        >
+                            <img
+                                src="assets/images/insert05.jpg"
+                                alt="3D Creature Design"
+                            />
+                        </a>
 
-<!-- Sección del hero con video
-<section class="hero-section">
-  <video autoplay muted loop playsinline class="background-video">
-    <source src="assets/videos/header-video.mp4" type="video/mp4">
-    Tu navegador no soporta video en HTML5.
-  </video>
+                        <!-- Recuadro 2 -->
+                        <a
+                            href="#"
+                            class="portfolio-item fade-in"
+                            data-video="video2"
+                        >
+                            <img
+                                src="assets/images/duelo.jpg"
+                                alt="Modern Architecture"
+                            />
+                        </a>
 
-  <div class="video-overlay"></div>
+                        <!-- Recuadro 3 -->
+                        <a
+                            href="#"
+                            class="portfolio-item fade-in"
+                            data-video="video3"
+                        >
+                            <img
+                                src="assets/images/insert03.jpg"
+                                alt="Digital Portrait"
+                            />
+                        </a>
 
-  <div class="hero-content">
-    <h1>AI PROMPTING / GENERATIVE WORKS</h1>
-    <p>su titulo aqui</p>
-    <!-- Scroll indicator
-<div class="scroll-indicator"></div>
-  </div>
-</section>-->
+                        <!-- Recuadro 4 -->
+                        <a
+                            href="#"
+                            class="portfolio-item fade-in"
+                            data-video="video4"
+                        >
+                            <img
+                                src="assets/images/spark.jpg"
+                                alt="Info Graphics"
+                            />
+                        </a>
 
+                        <!-- Recuadro 5 -->
+                        <a
+                            href="#"
+                            class="portfolio-item fade-in"
+                            data-video="video5"
+                        >
+                            <img
+                                src="assets/images/insert02.jpg"
+                                alt="Extra Project 1"
+                            />
+                        </a>
 
+                        <!-- Recuadro 6 -->
+                        <a
+                            href="#"
+                            class="portfolio-item fade-in"
+                            data-video="video6"
+                        >
+                            <img
+                                src="assets/images/Dacil_Groc.jpg"
+                                alt="Extra Project 2"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-<!-- Burger menu -->
-<div class="burger-menu" id="burgerMenu">
-  <div class="burger-line"></div>
-  <div class="burger-line"></div>
-  <div class="burger-line"></div>
-</div>
+            <div class="footer-bottom">
+                <p>&copy; 2025, All rights reserved.</p>
+            </div>
 
-<!-- Mobile Navigation -->
-<div class="mobile-nav" id="mobileNav">
-  <ul>
-      <li><a href="index.html#AI">AI Generated</a></li>
-      <li><a href="index.html#shot">+</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#services">Services</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-  </ul>
-</div>
+            <p id="scrollFade">
+                When the human persists in the noise, the unpredictable takes
+                shape.
+            </p>
+        </main>
 
-<main>
-  <section class="intro-section fade-in">
-    <div class="container">
-<!--<h1 class="intro-title">The human persists in the noise. The unpredictable takes shape</h1>-->
-      <p class="intro-subtitle">OTHER WORKS</p>
+        <!-- 🔹 NUEVO MODAL CON SINOPSIS -->
+        <div id="videoModal" class="video-modal">
+            <div class="video-modal-content">
+                <span class="close">&times;</span>
+                <div class="video-wrapper">
+                    <iframe
+                        id="vimeoPlayer"
+                        src=""
+                        frameborder="0"
+                        allow="autoplay; fullscreen"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="video-description">
+                    <p id="videoSynopsis"></p>
+                </div>
+            </div>
+        </div>
 
-  </section>
+        <!-- 🔹 SCRIPTS -->
+        <script>
+            // Frase al hacer scroll
+            const fadeEl = document.getElementById("scrollFade");
+            window.addEventListener("scroll", () => {
+                const rect = fadeEl.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                if (rect.top < windowHeight * 0.75) {
+                    fadeEl.classList.add("visible");
+                } else {
+                    fadeEl.classList.remove("visible");
+                }
+            });
 
-  <section class="portfolio-section" id="AI Generated">
-    <div class="container">
-      <div class="portfolio-grid">
+            // Burger menu
+            const burgerMenu = document.getElementById("burgerMenu");
+            const mobileNav = document.getElementById("mobileNav");
+            burgerMenu.addEventListener("click", () => {
+                burgerMenu.classList.toggle("active");
+                mobileNav.classList.toggle("active");
+            });
+            const mobileNavLinks = mobileNav.querySelectorAll("a");
+            mobileNavLinks.forEach((link) => {
+                link.addEventListener("click", () => {
+                    burgerMenu.classList.remove("active");
+                    mobileNav.classList.remove("active");
+                });
+            });
+            document.addEventListener("click", (e) => {
+                if (
+                    !burgerMenu.contains(e.target) &&
+                    !mobileNav.contains(e.target)
+                ) {
+                    burgerMenu.classList.remove("active");
+                    mobileNav.classList.remove("active");
+                }
+            });
 
-        <!-- Recuadro 1 -->
-        <a href="#" class="portfolio-item fade-in" data-video="https://player.vimeo.com/video/234076582">
-          <img src="assets/images/insert05.jpg" alt="3D Creature Design">
-        </a>
+            // 🎬 Modal con sinopsis
+            document.addEventListener("DOMContentLoaded", function () {
+                const modal = document.getElementById("videoModal");
+                const iframe = document.getElementById("vimeoPlayer");
+                const closeBtn = document.querySelector(".close");
+                const synopsis = document.getElementById("videoSynopsis");
 
-        <!-- Recuadro 2 -->
-        <a href="#" class="portfolio-item fade-in" data-video="https://player.vimeo.com/video/1131285795">
-          <img src="assets/images/duelo.jpg" alt="Modern Architecture">
-        </a>
+                const videos = {
+                    video1: {
+                        url: "https://player.vimeo.com/video/234076582",
+                        text: "INSERT SEASON 5th SEASON: Sounds frozen in time, music captured in objects. Techno Music-Generated Graphics.",
+                    },
+                    video2: {
+                        url: "https://player.vimeo.com/video/1131285795",
+                        text: "Ad for BRUBAKER CO.: Nose duel, featuring Andrés Velencoso and Jordi Roca.",
+                    },
+                    video3: {
+                        url: "https://player.vimeo.com/video/1131285727",
+                        text: "INSERT SEASON 3rd SEASON: Shot with termographic camera.",
+                    },
+                    video4: {
+                        url: "https://player.vimeo.com/video/1131285709",
+                        text: "Ad for Chevrolet: Chevrolet Spark-Get Inspired. First prize brand winner of MOFILM's Barcelona 2010",
+                    },
+                    video5: {
+                        url: "https://player.vimeo.com/video/1131285681",
+                        text: "INSERT 2.0.: The Sunday.  Concept / Creative director",
+                    },
+                    video6: {
+                        url: "https://player.vimeo.com/video/1131294704",
+                        text: "Music Video for Dácil: Groc.",
+                    },
+                };
 
-        <!-- Recuadro 3 -->
-        <a href="#" class="portfolio-item fade-in" data-video="https://player.vimeo.com/video/1131285727">
-          <img src="assets/images/insert03.jpg" alt="Digital Portrait">
-        </a>
+                document.querySelectorAll(".portfolio-item").forEach((item) => {
+                    item.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        const key = item.getAttribute("data-video");
+                        iframe.src = videos[key].url + "?autoplay=1";
+                        synopsis.textContent = videos[key].text;
+                        modal.style.display = "flex";
+                    });
+                });
 
-        <!-- Recuadro 4 -->
-        <a href="#" class="portfolio-item fade-in" data-video="https://player.vimeo.com/video/1131285709">
-          <img src="assets/images/spark.jpg" alt="Info Graphics">
-        </a>
+                closeBtn.addEventListener("click", () => {
+                    modal.style.display = "none";
+                    iframe.src = "";
+                });
 
-        <!-- Recuadro 5 -->
-        <a href="#" class="portfolio-item fade-in" data-video="https://player.vimeo.com/video/1131285681">
-          <img src="assets/images/insert02.jpg" alt="Extra Project 1">
-        </a>
+                window.addEventListener("click", (e) => {
+                    if (e.target === modal) {
+                        modal.style.display = "none";
+                        iframe.src = "";
+                    }
+                });
+            });
+        </script>
 
-        <!-- Recuadro 6 -->
-        <a href="#" class="portfolio-item fade-in" data-video="https://player.vimeo.com/video/1131294704">
-          <img src="assets/images/Dacil_Groc.jpg" alt="Extra Project 2">
-        </a>
+        <!-- 🔹 CSS inline (puedes moverlo a others.css si prefieres) -->
+        <style>
+            .video-modal {
+                display: none;
+                position: fixed;
+                z-index: 1000;
+                inset: 0;
+                background-color: rgba(0, 0, 0, 0.8);
+                justify-content: center;
+                align-items: center;
+            }
 
-      </div>
-    </div>
-  </section>
+            .video-modal-content {
+                background-color: #111;
+                border-radius: 12px;
+                max-width: 900px;
+                width: 90%;
+                padding: 20px;
+                box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            }
 
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025, All rights reserved.</p>
-    </div>
-  </div>
-</footer>
+            .video-wrapper {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                border-radius: 8px;
+            }
 
-<p id="scrollFade">When the human persists in the noise, the unpredictable takes shape.</p>
-    </div>
+            .video-wrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
 
-<script>
-  const fadeEl = document.getElementById('scrollFade');
+            .video-description {
+                margin-top: 20px;
+                color: #ccc;
+                font-family: "Inter", sans-serif;
+                font-size: 0.95rem;
+                line-height: 1.5;
+                text-align: justify;
+            }
 
-  window.addEventListener('scroll', () => {
-    const rect = fadeEl.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-
-    // Cuando la frase entra en el 75% inferior de la pantalla
-    if (rect.top < windowHeight * 0.75) {
-      fadeEl.classList.add('visible');
-    } else {
-      fadeEl.classList.remove('visible');
-    }
-  });
-
-  // Burger menu functionality
-  const burgerMenu = document.getElementById('burgerMenu');
-  const mobileNav = document.getElementById('mobileNav');
-
-  burgerMenu.addEventListener('click', () => {
-    burgerMenu.classList.toggle('active');
-    mobileNav.classList.toggle('active');
-  });
-
-  // Close mobile nav when clicking on a link
-  const mobileNavLinks = mobileNav.querySelectorAll('a');
-  mobileNavLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      burgerMenu.classList.remove('active');
-      mobileNav.classList.remove('active');
-    });
-  });
-
-  // Close mobile nav when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!burgerMenu.contains(e.target) && !mobileNav.contains(e.target)) {
-      burgerMenu.classList.remove('active');
-      mobileNav.classList.remove('active');
-    }
-  });
- </script>
-
-<body>
-  <!-- Todo tu contenido, grid, header, etc. -->
-
-  <!-- MODAL -->
-  <div id="videoModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="video-container">
-        <iframe id="vimeoPlayer" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-
-  <!-- SCRIPT para abrir/cerrar modal -->
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const modal = document.getElementById('videoModal');
-    const iframe = document.getElementById('vimeoPlayer');
-    const closeBtn = document.querySelector('.close');
-
-    // Abrir modal al hacer click en cualquier recuadro
-    document.querySelectorAll('.portfolio-item[data-video]').forEach(item => {
-      item.addEventListener('click', e => {
-        e.preventDefault();
-        const videoUrl = item.getAttribute('data-video');
-        iframe.src = videoUrl + "?autoplay=1";
-        modal.style.display = "flex"; // importante: flex para centrar
-      });
-    });
-
-    // Cerrar modal al click en X
-    closeBtn.addEventListener('click', () => {
-      modal.style.display = "none";
-      iframe.src = "";
-    });
-
-    // Cerrar modal al click fuera del contenido
-    window.addEventListener('click', e => {
-      if(e.target == modal){
-        modal.style.display = "none";
-        iframe.src = "";
-      }
-    });
-  });
-  </script>
-
-</body>
+            .close {
+                color: #fff;
+                float: right;
+                font-size: 24px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+        </style>
+    </body>
+</html>
