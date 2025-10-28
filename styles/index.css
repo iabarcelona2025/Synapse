@@ -140,10 +140,6 @@ main {
 }
 
 .intro-title {
-  display: none;
-}
-
-.intro-title {
   font-size: clamp(2.5rem, 8vw, 6rem);
   font-weight: 300;
   letter-spacing: -2px;
