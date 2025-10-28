@@ -87,53 +87,6 @@ body {
     color: #ffff;
 }
 
-/* ===== TEXTO SOBRE VIDEO ===== */
-.hero-content {
-    position: relative;
-    z-index: 10;
-    color: white;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.6;
-}
-
-.hero-content h1 {
-    font-family: "Inter", sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    opacity: 0.8;
-    text-shadow: 1px 1px 3px darkslategrey;
-}
-
-.hero-content p {
-    font-family: "Inter", sans-serif;
-    font-size: 1.2rem;
-    opacity: 0.01;
-}
-
-/* === SCROLL INDICATOR === */
-.scroll-indicator {
-    width: 2px;
-    height: 50px;
-    background: white;
-    z-index: 2; /* sobre el video */
-    margin: 2rem auto;
-    animation: scrollPulse 2s infinite;
-}
-
-@keyframes scrollPulse {
-    0%,
-    100% {
-        opacity: 0.2;
-        transform: translateY(0);
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(10px);
-    }
-}
-
 /* === MAIN CONTENT === */
 main {
     margin-top: 100px;
@@ -422,34 +375,6 @@ footer {
     }
 }
 
-/* ===== HERO VIDEO ===== */
-.hero-section {
-    position: relative;
-    height: calc(100vh - 80px); /* Pantalla completa menos menú */
-    margin-top: 80px; /* Espacio para que no tape menú */
-    overflow: hidden;
-}
-
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-}
-
-.video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.35);
-    z-index: -1;
-}
-
 /* Línea decorativa encima del menú fijo */
 .top-nav::before {
     content: "";
@@ -472,129 +397,6 @@ html {
 }
 #scrollFade.visible {
     opacity: 1;
-}
-
-/* === SECCIONES VERTICALES A PANTALLA COMPLETA === */
-.full-section {
-    min-height: 80vh; /* ocupa toda la altura visible */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* centra verticalmente */
-    align-items: center; /* centra horizontalmente */
-    text-align: center;
-    padding: 40px;
-    background-color: #000; /* o el color que prefieras */
-    border-bottom: 1px solid #1a1a1a; /* separador sutil entre secciones */
-}
-
-.full-section h2 {
-    font-size: clamp(2rem, 6vw, 3rem);
-    margin-bottom: 1rem;
-    color: #fff;
-}
-
-.full-section p {
-    font-size: 1.1rem;
-    color: #aaa;
-    max-width: 700px;
-}
-
-/* ===== CONTACT SECTION ===== */
-.contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0a0a0a;
-    padding: 100px 20px;
-    color: #fff;
-}
-
-.contact-container {
-    background: #2a2a2a; /* gris medio */
-    padding: 60px 80px;
-    border-radius: 12px;
-    max-width: 700px;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-.contact-container h2 {
-    text-transform: none;
-    font-size: clamp(2rem, 6vw, 3rem);
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.contact-form label {
-    text-align: left;
-    font-size: 14px;
-    color: #bbb;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 14px;
-    border: 1px solid #444;
-    border-radius: 6px;
-    background-color: #111;
-    color: #fff;
-    font-size: 14px;
-}
-
-.contact-form textarea {
-    min-height: 70px;
-}
-
-.contact-form button {
-    background-color: #fff;
-    color: #000;
-    border: none;
-    padding: 14px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #ccc;
-}
-
-/* Contact info & social icons */
-.contact-info {
-    margin-top: 30px;
-    font-size: 12px;
-}
-
-.contact-info a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.social-icons {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-icons i {
-    font-size: 22px;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.social-icons i:hover {
-    color: #bbb;
 }
 
 /* Mobile adjustments */
@@ -655,14 +457,14 @@ html {
 
 .modal-content {
     background-color: #111;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    width: 90%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    padding: 3px;
+    border-radius: 8px;
+    max-width: auto;
+    width: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
 }
 
 .video-container {
@@ -675,6 +477,9 @@ html {
 
 .video-container iframe {
     position: absolute;
+    width: 100%;
+    height: 450px; /* o lo que necesites */
+    border: none;
     top: 0;
     left: 0;
     width: 100%;
