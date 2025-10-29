@@ -1,3 +1,4 @@
+/* === RESETEO === */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
 body {
     background-color: #0a0a0a;
     color: #e5e5e5;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 300;
     line-height: 1.6;
     overflow-x: hidden;
@@ -67,28 +68,6 @@ body {
 .top-nav nav a:hover {
     color: #ffff;
 }
-.back-btn {
-    color: #888;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.back-btn:hover {
-    color: #ffffff;
-}
-
-.back-btn::before {
-    content: "← ";
-    font-size: 16px;
-}
-
 
 /* Navigation */
 nav.projects-navigation .buttons {
@@ -108,7 +87,7 @@ nav.projects-navigation .buttons {
 
 nav.projects-navigation .buttons::before {
     width: 100%;
-    content: '\00a0';
+    content: "\00a0";
     flex-grow: 1;
     background-image: linear-gradient(to right, #333, #333);
     background-size: 100% 1px;
@@ -118,7 +97,7 @@ nav.projects-navigation .buttons::before {
 
 nav.projects-navigation .buttons::after {
     width: 15%;
-    content: '\00a0';
+    content: "\00a0";
     flex-grow: 1;
     background-image: linear-gradient(to right, #333, #333);
     background-size: 100% 1px;
@@ -141,6 +120,12 @@ nav.projects-navigation a:hover {
 main {
     margin-top: 100px;
     padding: 40px 0 80px;
+}
+
+.intro-section {
+    text-align: center;
+    padding: 40px 0 120px;
+    border-bottom: 1px solid #1a1a1a;
 }
 
 .project-header {
@@ -227,7 +212,7 @@ main {
 }
 
 .detail-section li::before {
-    content: '— ';
+    content: "— ";
     color: #555;
     margin-right: 10px;
 }
@@ -319,23 +304,139 @@ main {
     letter-spacing: 1px;
 }
 
+/* === BURGER MENU === */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+    position: fixed;
+    top: 25px;
+    right: 40px;
+}
+
+.burger-line {
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.burger-menu.active .burger-line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.burger-menu.active .burger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active .burger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* === MOBILE NAV === */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        rgba(10, 10, 10, 0.8) 0%,
+        rgba(17, 17, 17, 0.8) 100%
+    );
+    backdrop-filter: blur(20px);
+    z-index: 1000;
+    transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    padding-top: 100px;
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    gap: 24px; /* <-- ajusta este valor para más o menos espacio */
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-nav a {
+    color: #888;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.mobile-nav a:hover {
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+.mobile-nav a::before {
+    content: "· ";
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-nav a:hover::before {
+    opacity: 0.8;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-    .project-details {
-        grid-template-columns: 1fr;
-        gap: 40px;
+    nav {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .mobile-nav {
+        display: block;
     }
 
     .related-grid {
         grid-template-columns: 1fr;
     }
 
-    .container {
-        padding: 0 15px;
+    .intro-section {
+        padding: 60px 0 80px;
     }
 
     .project-header {
         padding: 40px 0;
+    }
+
+    .intro-title {
+        font-size: clamp(2rem, 10vw, 4rem);
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-nav {
+        display: none !important;
+    }
+
+    .burger-menu {
+        display: none !important;
     }
 }
 
@@ -352,35 +453,35 @@ main {
 }
 
 .video-container {
-  position: relative;
-  width: 100%;
-  max-width: 1200px; /* opcional, limita el tamaño */
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* opcional, limita el tamaño */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* 🎥 aquí la magia: adapta la proporción al video original */
 .video-container iframe {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9; /* valor por defecto */
-  display: block;
-  border: none;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* valor por defecto */
+    display: block;
+    border: none;
 }
 
 /* 🔸 Si quieres permitir distintos formatos dinámicos */
 .video-container[data-aspect="square"] iframe {
-  aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1;
 }
 
 .video-container[data-aspect="vertical"] iframe {
-  aspect-ratio: 9 / 16;
+    aspect-ratio: 9 / 16;
 }
 
 .video-container[data-aspect="classic"] iframe {
-  aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 3;
 }
 
 .video-text {
@@ -398,4 +499,15 @@ main {
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 1rem; /* reduce el tamaño del título */
+}
+/* Línea decorativa encima del menú fijo */
+.top-nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #6e0f23; /* color cálido */
+    z-index: 2000; /* encima del menú */
 }
