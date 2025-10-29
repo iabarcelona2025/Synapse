@@ -196,12 +196,15 @@
 
 
 </section>
+<form id="contact-form" action="https://formspree.io/f/iabarcelona2025@gmail.com" method="POST">
+  <!-- aquí tu HTML con estilos y clases existentes -->
+</form>
 
 <section id="contact">
   <div class="contact-wrapper">
     <div class="contact-left">
       <h2>Contact</h2>
-      <form class="contact-form" action="mailto:tuemail@gmail.com" method="post" enctype="text/plain">
+      <form class="contact-form" action="https://formspree.io/f/mzzkreow" method="post" enctype="text/plain">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Your email" required>
         <textarea name="message" placeholder="Your message" required></textarea>
@@ -214,6 +217,7 @@
       <div class="social-links">
         <a href="https://es.linkedin.com/in/manueldominguezdelaosa/es" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://www.instagram.com/dommanuel/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/34645795080" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
   </div>
@@ -268,6 +272,35 @@
       mobileNav.classList.remove('active');
     }
   });
+</script>
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const form = event.target;
+
+  // Convertimos los campos del formulario a un objeto
+  const formData = new FormData(form);
+  const data = {};
+  formData.forEach((value, key) => { data[key] = value });
+
+  // Enviamos como JSON
+  fetch(form.action, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => {
+    if (response.ok) {
+      alert("Thanks for your message!");
+      form.reset();
+    } else {
+      alert("Oops! There was a problem.");
+    }
+  });
+});
 </script>
 
 </body>
