@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creature Design - Creative Portfolio</title>
+    <title>Synapse - AI PROMPTING / GENERATIVE WORKS</title>
     <meta name="description" content="3D creature design showcasing organic modeling and texturing techniques">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +11,6 @@
         href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link href="styles/pieza.css" rel="stylesheet">
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -24,10 +20,8 @@
         <a href="#" class="logo">
       <img src="assets/logo.svg" alt="Synapse Logo" />
     </a>
-
-
-        <nav>
-          <ul>
+      <nav>
+        <ul>
           <li><a href="index.html#AI">AI Generated</a></li>
           <li><a href="index.html#shot">Filmed Works</a></li>
           <li><a href="index.html#about">About</a></li>
@@ -37,6 +31,25 @@
         </nav>
       </div>
     </header>
+
+    <!-- Burger menu -->
+    <div class="burger-menu" id="burgerMenu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html#AI">AI Generated</a></li>
+            <li><a href="index.html#shot">Filmed Works</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+
 
     <!--<main>
 
@@ -59,15 +72,17 @@
                 <a href="project-architecture.html">&gt;</a>
             </div>
         </nav>
-        
+
+
         <section class="project-gallery">
             <div class="container">
                 <div class="main-image fade-in">
                     <!--<img src="assets/images/Samurai.jpg" alt="Creature Design - Full View">-->
                 </div>
+                <main>
 <section id="video">
   <div class="video-container">
-    <iframe 
+    <iframe
       src="https://player.vimeo.com/video/1126933718"
       title="AI Generated Video"
       frameborder="0"
@@ -76,6 +91,7 @@
     </iframe>
   </div>
 </section>
+
                 <div class="project-details">
                     <div class="detail-section fade-in">
                         <div class="video-text">
@@ -131,7 +147,7 @@ Immersion becomes both erasure and return. What remains is not the body, but its
                     <a href="project-portrait.html" class="related-item fade-in">
                         <img src="assets/portfolio-portrait-Ong92Nzu.jpg" alt="Digital Portrait">
                         <div class="related-item-info">
-                            <h3 class="related-item-title">Digital Portrait</h3>
+                            <h3 class="related-item-title">IAD Annual meeeting</h3>
                             <!--<p class="related-item-category">Character Art</p>-->
                         </div>
                     </a>
@@ -160,7 +176,35 @@ Immersion becomes both erasure and return. What remains is not the body, but its
         document.querySelectorAll('.fade-in').forEach((item) => {
             observer.observe(item);
         });
+
+        // Burger menu
+        const burgerMenu = document.getElementById("burgerMenu");
+        const mobileNav = document.getElementById("mobileNav");
+        burgerMenu.addEventListener("click", () => {
+            burgerMenu.classList.toggle("active");
+            mobileNav.classList.toggle("active");
+        });
+        const mobileNavLinks = mobileNav.querySelectorAll("a");
+        mobileNavLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                burgerMenu.classList.remove("active");
+                mobileNav.classList.remove("active");
+            });
+        });
+        document.addEventListener("click", (e) => {
+            if (
+                !burgerMenu.contains(e.target) &&
+                !mobileNav.contains(e.target)
+            ) {
+                burgerMenu.classList.remove("active");
+                mobileNav.classList.remove("active");
+            }
+        });
+
     </script>
+
+
+
 </body>
 
 </html>
