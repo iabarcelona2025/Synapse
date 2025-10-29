@@ -677,7 +677,6 @@ html {
     color: #f1f1f1;
 }
 
-
 .contact-wrapper {
     display: flex;
     justify-content: center;
@@ -688,7 +687,8 @@ html {
     padding: 0 20px;
 }
 
-.contact-left, .contact-right {
+.contact-left,
+.contact-right {
     flex: 1;
 }
 
@@ -753,7 +753,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 25px;
+    gap: 50px;
 }
 
 .contact-text {
@@ -765,12 +765,15 @@ html {
 
 .social-links {
     display: flex;
-    gap: 20px;
+    justify-content: center; /* centrados horizontalmente */
+    align-items: center; /* centrados verticalmente */
+    margin-top: 80px; /* separa del formulario */
+    gap: 90px; /* espacio entre iconos */
 }
 
 .social-links a {
     color: #f1f1f1;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     transition: color 0.3s ease;
 }
 
