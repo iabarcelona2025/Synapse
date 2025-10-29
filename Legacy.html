@@ -263,5 +263,22 @@
                 });
             });
         </script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script>
+            const iframe = document.querySelector("#vimeo-player");
+            const player = new Vimeo.Player(iframe);
+
+            window.addEventListener("orientationchange", async () => {
+                if (window.orientation === 90 || window.orientation === -90) {
+                    try {
+                        await player.requestFullscreen();
+                    } catch (e) {
+                        console.log("Fullscreen blocked until user interacts");
+                    }
+                } else {
+                    await player.exitFullscreen();
+                }
+            });
+        </script>
     </body>
 </html>
