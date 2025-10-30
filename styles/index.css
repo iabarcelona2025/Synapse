@@ -783,10 +783,25 @@ html {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 800px) {
+    .contact-form {
+        width: 100%; /* o 100%, según tu diseño */
+        padding: 20px; /* reduce espacio interior */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%; /* que ocupen todo el ancho */
+        font-size: 14px; /* texto un poco más pequeño */
+    }
+
+    .contact-form textarea {
+        height: 150px; /* ajusta altura del cuadro de mensaje */
+    }
+
     .contact-wrapper {
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 30px;
     }
 
     .contact-right {
@@ -796,5 +811,11 @@ html {
 
     .contact-text {
         max-width: none;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 70%; /* cada parte ocupa todo el ancho */
+        text-align: center;
     }
 }
