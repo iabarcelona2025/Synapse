@@ -271,22 +271,45 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 </footer>
 
-
-
 <script>
-  const fadeEl = document.getElementById('scrollFade');
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeText = document.getElementById("scrollFade");
 
-  window.addEventListener('scroll', () => {
-    const rect = fadeEl.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
+  const fadeInStart = 100;   // empieza a aparecer
+  const fadeInEnd = 500;     // completamente visible
+  const fadeOutStart = 800;  // empieza a desaparecer
+  const fadeOutEnd = 1200;   // totalmente invisible
 
-    // Cuando la frase entra en el 75% inferior de la pantalla
-    if (rect.top < windowHeight * 0.75) {
-      fadeEl.classList.add('visible');
+  window.addEventListener("scroll", () => {
+    const y = window.scrollY;
+    let opacity = 0;
+    let translateY = 0; // desplazamiento vertical
+
+    if (y <= fadeInStart) {
+      opacity = 0;
+      translateY = 20; // empieza ligeramente más abajo
+    } else if (y > fadeInStart && y < fadeInEnd) {
+      const progress = (y - fadeInStart) / (fadeInEnd - fadeInStart);
+      opacity = progress;
+      translateY = 20 - progress * 20; // sube hasta posición original
+    } else if (y >= fadeInEnd && y <= fadeOutStart) {
+      opacity = 1;
+      translateY = 0;
+    } else if (y > fadeOutStart && y < fadeOutEnd) {
+      const progress = (y - fadeOutStart) / (fadeOutEnd - fadeOutStart);
+      opacity = 1 - progress;
+      translateY = -progress * 20; // se eleva un poco al desaparecer
     } else {
-      fadeEl.classList.remove('visible');
+      opacity = 0;
+      translateY = -20;
     }
+
+    fadeText.style.opacity = opacity;
+    fadeText.style.transform = `translateY(${translateY}px)`;
   });
+});
+
+</script>
 
   // Burger menu functionality
   const burgerMenu = document.getElementById('burgerMenu');
