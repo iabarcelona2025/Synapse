@@ -555,6 +555,10 @@ html {
     background-color: #ccc;
 }
 
+#contact {
+    scroll-margin-top: 220px; /* ajusta según la altura de tu barra */
+}
+
 /* Contact info & social icons */
 .contact-info {
     margin-top: 30px;
