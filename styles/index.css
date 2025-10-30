@@ -642,16 +642,21 @@ html {
     }
 }
 #scrollFade {
-    opacity: 1 !important; /* visible siempre */
-    color: #b3b3b3; /* mismo gris que About */
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.8s ease-out,
+        transform 1.2s ease-out;
+    color: #b3b3b3;
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    font-size: clamp(1.5rem, 2vw, 2.5rem); /* tamaño proporcional */
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
     text-align: center;
-    margin: 0px 0 0 0; /* separa del hero */
-    z-index: 10;
+    margin: 0;
     position: relative;
+    will-change: opacity, transform;
 }
+
 .intro-subtitle {
     margin-top: 200px; /* opcional, si quieres más espacio desde #scrollFade */
 }
@@ -662,16 +667,6 @@ html {
     background-color: #000; /* mismo fondo que tu web */
 }
 
-#scrollFade {
-    opacity: 1 !important;
-    color: #b3b3b3; /* mismo gris que About */
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
-    line-height: 1.4;
-    margin: 0 auto;
-    max-width: 900px; /* evita que se estire demasiado en pantallas grandes */
-}
 /* --- CONTACT SECTION (Two-Column Minimalist Style) --- */
 #contact {
     background:
