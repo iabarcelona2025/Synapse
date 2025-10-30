@@ -832,4 +832,8 @@ html {
         width: 70%; /* cada parte ocupa todo el ancho */
         text-align: center;
     }
+
+        #contact {
+        scroll-margin-top: 81px; /* ajusta según la altura de tu barra */
+    }
 }
