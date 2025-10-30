@@ -458,7 +458,7 @@ main {
     max-width: 1200px; /* opcional, limita el tamaño */
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 0px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
