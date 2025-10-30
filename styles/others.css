@@ -512,7 +512,7 @@ html {
     line-height: 1.6;
 }
 
-.close {
+/* ---.close {
     position: absolute;
     top: 335px;
     right: 165px;
@@ -525,4 +525,4 @@ html {
 
 .close:hover {
     opacity: 0.6;
-}
+}--- */
