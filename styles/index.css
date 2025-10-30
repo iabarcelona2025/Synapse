@@ -476,6 +476,15 @@ html {
     max-width: 700px;
 }
 
+#about {
+    padding-top: 0px; /* espacio arriba */
+    padding-bottom: 260px; /* espacio abajo */
+}
+
+#about {
+    scroll-margin-top: 210px; /* ajusta el valor */
+}
+
 /* ===== CONTACT SECTION ===== */
 .contact-section {
     display: flex;
@@ -594,6 +603,7 @@ html {
     font-family: inherit; /* usa la tipografía de la página */
     text-align: left;
     padding-top: 40px; /* <-- separa el contenido del título */
+    padding-bottom: 40px;
 }
 
 .services-column {
