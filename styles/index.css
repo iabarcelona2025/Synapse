@@ -620,6 +620,10 @@ html {
     color: #b3b3b3;
 }
 
+#services {
+    scroll-margin-top: 81px; /* ajusta según la altura de tu barra */
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
     .services-grid {
