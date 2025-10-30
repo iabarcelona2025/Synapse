@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SYNAPSE - AI PROMPTING / GENERATIVE WORKS</title>
-  <meta name="description" content="Landing Page">
+  <title>Creative Portfolio - Dark Edition</title>
+  <meta name="description" content="Minimalist portfolio showcasing creative work with dark aesthetic">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -159,17 +159,17 @@
         <h3>Creative Concept Development</h3>
         <p>Transforming abstract ideas into strong, original creative concepts that connect with audiences.</p>
       </div>
-      
+
       <div class="service-item">
         <h3>AI-Driven Image & Video Generation</h3>
         <p>Exploring new visual territories through artificial intelligence — merging technology and creative intuition.</p>
       </div>
-      
+
       <div class="service-item">
         <h3>Art Direction & Visual Storytelling</h3>
         <p>Designing the aesthetic and narrative core of each project through image, rhythm, and emotion.</p>
       </div>
-      
+
       <div class="service-item">
         <h3>Video Direction & Production</h3>
         <p>From ideation to final cut — directing, shooting, and crafting visual pieces with cinematic precision.</p>
@@ -181,7 +181,7 @@
         <h3>Brand Concept & Identity</h3>
         <p>Building visual and conceptual frameworks that define how a brand feels, speaks, and moves.</p>
       </div>
- 
+
       <div class="service-item">
         <h3>Narrative Design</h3>
         <p>Crafting stories that merge human emotion with visual innovation.</p>
@@ -196,7 +196,7 @@
 
 
 </section>
-<form id="contact-form" action="https://formspree.io/f/iabarcelona2025@gmail.com" method="POST">
+<form id="contact-form" action="https://formspree.io/f/mzzkreow" method="POST">
   <!-- aquí tu HTML con estilos y clases existentes -->
 </form>
 
@@ -204,12 +204,15 @@
   <div class="contact-wrapper">
     <div class="contact-left">
       <h2>Contact</h2>
-      <form class="contact-form" action="https://formspree.io/f/mzzkreow" method="post" enctype="text/plain">
+
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/mzzkreow" method="POST">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Your email" required>
         <textarea name="message" placeholder="Your message" required></textarea>
         <button type="submit">Send</button>
       </form>
+
+      <p id="form-status" style="color:#999; margin-top:10px;"></p>
     </div>
 
     <div class="contact-right">
@@ -222,6 +225,41 @@
     </div>
   </div>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value,
+    };
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        status.textContent = "Message sent successfully!";
+        form.reset();
+      } else {
+        status.textContent = "There was an error sending your message.";
+      }
+    } catch (error) {
+      status.textContent = "Network error. Please try again.";
+    }
+  });
+});
+</script>
+
 
     </div>
     <div class="footer-bottom">
@@ -273,35 +311,5 @@
     }
   });
 </script>
-<script>
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-  event.preventDefault();
-  const form = event.target;
-
-  // Convertimos los campos del formulario a un objeto
-  const formData = new FormData(form);
-  const data = {};
-  formData.forEach((value, key) => { data[key] = value });
-
-  // Enviamos como JSON
-  fetch(form.action, {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  })
-  .then(response => {
-    if (response.ok) {
-      alert("Thanks for your message!");
-      form.reset();
-    } else {
-      alert("Oops! There was a problem.");
-    }
-  });
-});
-</script>
-
 </body>
 </html>
