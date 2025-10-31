@@ -1,341 +1,266 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SYNAPSE - AI Prompting / Generative Works</title>
-  <meta name="description" content="Landing">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-      <!-- Font Awesome (versión segura sin atributo integrity) -->
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      />
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SYNAPSE - Creación Generativa / Prompting AI</title>
+        <meta
+            name="description"
+            content="Otras Obras"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link href="styles/others.css" rel="stylesheet" />
+    </head>
 
-  <link href="styles/index.css" rel="stylesheet">
-</head>
+    <body>
+        <!-- Menú fijo negro -->
+        <header class="top-nav">
+            <div class="container header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.svg" alt="Logo Synapse" />
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#AI%20Generated">Generado con IA</a></li>
+                        <li><a href="index.html#shot">Obras Filmadas</a></li>
+                        <li><a href="index.html#about">Acerca de</a></li>
+                        <li><a href="index.html#services">Servicios</a></li>
+                        <li><a href="index.html#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-<body>
+        <!-- Menú hamburguesa -->
+        <div class="burger-menu" id="burgerMenu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
 
-<!-- Menú fijo negro -->
-<header class="top-nav">
-  <div class="container header-content">
-    <a href="#" class="logo">
-  <img src="assets/logo.svg" alt="Synapse Logo" />
-</a>
+        <!-- Navegación móvil -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html#AI">Generado con IA</a></li>
+                <li><a href="index.html#shot">Obras Filmadas</a></li>
+                <li><a href="index.html#about">Acerca de</a></li>
+                <li><a href="index.html#services">Servicios</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+        </div>
 
+        <main>
+            <section class="intro-section fade-in">
+                <div class="container">
+                    <p class="intro-subtitle">OBRAS FILMADAS</p>
+                </div>
+            </section>
 
-    <nav>
-      <ul>
-        <li><a href="#AI Generated">Generado con IA</a></li>
-        <li><a href="Legacy.html" class="plus">Obras Filmadas</a></li>
-        <li><a href="#about">Sobre mi</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+            <section class="portfolio-section" id="AI Generated">
+                <div class="container">
+                    <div class="portfolio-grid">
+                        <!-- Recuadro 1 -->
+                        <a
+                            href="#"
+                            class="portfolio-item fade-in"
+                            data-video="video1"
+                        >
+                            <img
+                                src="assets/images/insert05_1.jpg"
+                                alt="Diseño de criatura 3D"
+                            />
+                        </a>
 
-<!-- Sección del hero con video -->
-<section class="hero-section">
-  <video autoplay muted loop playsinline class="background-video">
-    <source src="assets/videos/header-video.mp4" type="video/mp4">
-    Tu navegador no soporta video en HTML5.
-  </video>
+                        <!-- Recuadro 2 -->
+                        <a
+                            href="#"
+                            class="portfolio-item fade-in"
+                            data-video="video2"
+                        >
+                            <img
+                                src="assets/images/duelo.jpg"
+                                alt="Arquitectura moderna"
+                            />
+                        </a>
 
-  <div class="video-overlay"></div>
+                        <!-- Recuadro 3 -->
+                        <a
+                            href="#"
+                            class="portfolio-item fade-in"
+                            data-video="video3"
+                        >
+                            <img
+                                src="assets/images/insert03.jpg"
+                                alt="Retrato digital"
+                            />
+                        </a>
 
-  <div class="hero-content">
-    <h1>AI PROMPTING / GENERATIVE WORKS</h1>
-    <p>su titulo aqui</p>
-    <!-- Scroll indicator -->
-<div class="scroll-indicator"></div>
-  </div>
-</section>
+                        <!-- Recuadro 4 -->
+                        <a
+                            href="#"
+                            class="portfolio-item fade-in"
+                            data-video="video4"
+                        >
+                            <img
+                                src="assets/images/spark.jpg"
+                                alt="Infografía"
+                            />
+                        </a>
 
+                        <!-- Recuadro 5 -->
+                        <a
+                            href="#"
+                            class="portfolio-item fade-in"
+                            data-video="video5"
+                        >
+                            <img
+                                src="assets/images/insert02.jpg"
+                                alt="Proyecto extra 1"
+                            />
+                        </a>
 
+                        <!-- Recuadro 6 -->
+                        <a
+                            href="#"
+                            class="portfolio-item fade-in"
+                            data-video="video6"
+                        >
+                            <img
+                                src="assets/images/groc2.jpg"
+                                alt="Proyecto extra 2"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-<!-- Burger menu -->
-<div class="burger-menu" id="burgerMenu">
-  <div class="burger-line"></div>
-  <div class="burger-line"></div>
-  <div class="burger-line"></div>
-</div>
+            <div class="footer-bottom">
+                <p>&copy; 2025, Todos los derechos reservados.</p>
+            </div>
 
-<!-- Mobile Navigation -->
-<div class="mobile-nav" id="mobileNav">
-  <ul>
-    <li><a href="#AI Generated">AI Generated</a></li>
-    <li><a href="Legacy.html" class="plus">Filmed Works</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</div>
+            <p id="scrollFade">
+                Cuando el ser humano persiste en el ruido, lo impredecible toma forma.
+            </p>
+        </main>
 
-<main>
-    <!-- Sección de frase -->
-    <section class="quote-section">
-      <div class="container">
-        <p id="scrollFade">
-          Cuando lo humano persiste en el ruido, lo impredecible toma forma
-        </p>
-      </div>
-    </section>
+        <!-- 🔹 NUEVO MODAL CON SINOPSIS -->
+        <div id="videoModal" class="video-modal">
+            <div class="video-modal-content">
+                <span class="close">&times;</span>
+                <div class="video-wrapper">
+                    <iframe
+                        id="vimeoPlayer"
+                        src=""
+                        frameborder="0"
+                        allow="autoplay; fullscreen"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="video-description">
+                    <p id="videoSynopsis"></p>
+                </div>
+            </div>
+        </div>
 
-    <!-- Sección AI GENERATED -->
-    <section class="intro-section fade-in">
-      <div class="container">
-        <p class="intro-subtitle">AI GENERATED</p>
-      </div>
-    </section>
+        <!-- 🔹 SCRIPTS -->
+        <script>
+            // Frase al hacer scroll
+            const fadeEl = document.getElementById("scrollFade");
+            window.addEventListener("scroll", () => {
+                const rect = fadeEl.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                if (rect.top < windowHeight * 0.75) {
+                    fadeEl.classList.add("visible");
+                } else {
+                    fadeEl.classList.remove("visible");
+                }
+            });
 
-  </section>
+            // Menú hamburguesa
+            const burgerMenu = document.getElementById("burgerMenu");
+            const mobileNav = document.getElementById("mobileNav");
+            burgerMenu.addEventListener("click", () => {
+                burgerMenu.classList.toggle("active");
+                mobileNav.classList.toggle("active");
+            });
+            const mobileNavLinks = mobileNav.querySelectorAll("a");
+            mobileNavLinks.forEach((link) => {
+                link.addEventListener("click", () => {
+                    burgerMenu.classList.remove("active");
+                    mobileNav.classList.remove("active");
+                });
+            });
+            document.addEventListener("click", (e) => {
+                if (
+                    !burgerMenu.contains(e.target) &&
+                    !mobileNav.contains(e.target)
+                ) {
+                    burgerMenu.classList.remove("active");
+                    mobileNav.classList.remove("active");
+                }
+            });
 
-  <section class="portfolio-section" id="AI Generated">
-    <div class="container">
-      <!--<h2 class="section-title">Featured Work</h2>-->
-      <div class="portfolio-grid">
-        <a href="project-creature.html" class="portfolio-item fade-in">
-          <img src="assets/images/Stained.jpg" alt="3D Creature Design">
-          <div class="portfolio-item-info">
-            <h3 class="portfolio-item-title">Creature Design</h3>
-            <p class="portfolio-item-category">3D Modeling</p>
-          </div>
-        </a>
-        <a href="project-architecture.html" class="portfolio-item fade-in">
-          <img src="assets/images/Asics.jpg" alt="Architectural Visualization">
-          <div class="portfolio-item-info">
-            <h3 class="portfolio-item-title">Modern Architecture</h3>
-            <p class="portfolio-item-category">Visualization</p>
-          </div>
-        </a>
-        <a href="project-portrait.html" class="portfolio-item fade-in">
-          <img src="assets/images/iad.jpg" alt="Portrait Art">
-          <div class="portfolio-item-info">
-            <h3 class="portfolio-item-title">Digital Portrait</h3>
-            <p class="portfolio-item-category">Character Art</p>
-          </div>
-        </a>
-        <a href="project-infographic.html" class="portfolio-item fade-in">
-          <img src="assets/images/Hsbc.jpg" alt="Information Design">
-          <div class="portfolio-item-info">
-            <h3 class="portfolio-item-title">Info Graphics</h3>
-            <p class="portfolio-item-category">Data Visualization</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+            // 🎬 Modal con sinopsis
+            document.addEventListener("DOMContentLoaded", function () {
+                const modal = document.getElementById("videoModal");
+                const iframe = document.getElementById("vimeoPlayer");
+                const closeBtn = document.querySelector(".close");
+                const synopsis = document.getElementById("videoSynopsis");
 
-  <!--<section class="categories-section" id="categories">
-    <div class="container">
-      <h2 class="section-title">Explore Categories</h2>
-      <div class="categories-grid">
-        <a href="#" class="category-item fade-in" id="motion">Motion Graphics</a>
-        <a href="#" class="category-item fade-in" id="static">Static Design</a>
-        <a href="#" class="category-item fade-in">3D Modeling</a>
-        <a href="#" class="category-item fade-in">Visualization</a>
-        <a href="#" class="category-item fade-in">Branding</a>
-        <a href="#" class="category-item fade-in">Experiential</a>
-      </div>
-    </div>
-  </section>-->
-</main>
+                const videos = {
+                    video1: {
+                        url: "https://player.vimeo.com/video/1131285757",
+                        text: "INSERT TEMPORADA 5: Sonidos congelados en el tiempo, música capturada en objetos. Gráficos generados por música techno.",
+                    },
+                    video2: {
+                        url: "https://player.vimeo.com/video/1131285795",
+                        text: "Anuncio para BRUBAKER CO.: Duelo de narices, protagonizado por Andrés Velencoso y Jordi Roca.",
+                    },
+                    video3: {
+                        url: "https://player.vimeo.com/video/1131285727",
+                        text: "INSERT TEMPORADA 3: Rodado con cámara termográfica.",
+                    },
+                    video4: {
+                        url: "https://player.vimeo.com/video/1131285709",
+                        text: "Anuncio para Chevrolet: Chevrolet Spark - Inspírate. Primer premio de marca en el MOFILM Barcelona 2010.",
+                    },
+                    video5: {
+                        url: "https://player.vimeo.com/video/1131285681",
+                        text: "INSERT 2.0.: The Sunday. Concepto / Dirección creativa.",
+                    },
+                    video6: {
+                        url: "https://player.vimeo.com/video/1132205331",
+                        text: "Videoclip para Dácil: Groc.",
+                    },
+                };
 
-<section id="about" class="full-section">
-  <h2>About</h2>
-<p>
-  <span>Creative professional exploring the intersection of human intuition and machine synthesis.</span><br>
-  <span>Specialized in AI-generated video, motion design, and visual storytelling that redefines the boundaries of perception.</span>
-</p>
-</section>
+                document.querySelectorAll(".portfolio-item").forEach((item) => {
+                    item.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        const key = item.getAttribute("data-video");
+                        iframe.src = videos[key].url + "?autoplay=1";
+                        synopsis.textContent = videos[key].text;
+                        modal.style.display = "flex";
+                    });
+                });
 
-<section id="services" class="full-section">
-  <h2>Services</h2>
-  <div class="services-grid">
-    <div class="services-column">
-      <div class="service-item">
-        <h3>Creative Concept Development</h3>
-        <p>Transforming abstract ideas into strong, original creative concepts that connect with audiences.</p>
-      </div>
+                closeBtn.addEventListener("click", () => {
+                    modal.style.display = "none";
+                    iframe.src = "";
+                });
 
-      <div class="service-item">
-        <h3>AI-Driven Image & Video Generation</h3>
-        <p>Exploring new visual territories through artificial intelligence — merging technology and creative intuition.</p>
-      </div>
-
-      <div class="service-item">
-        <h3>Art Direction & Visual Storytelling</h3>
-        <p>Designing the aesthetic and narrative core of each project through image, rhythm, and emotion.</p>
-      </div>
-
-      <div class="service-item">
-        <h3>Video Direction & Production</h3>
-        <p>From ideation to final cut — directing, shooting, and crafting visual pieces with cinematic precision.</p>
-      </div>
-   </div>
-
-    <div class="services-column">
-      <div class="service-item">
-        <h3>Brand Concept & Identity</h3>
-        <p>Building visual and conceptual frameworks that define how a brand feels, speaks, and moves.</p>
-      </div>
-
-      <div class="service-item">
-        <h3>Narrative Design</h3>
-        <p>Crafting stories that merge human emotion with visual innovation.</p>
-      </div>
-
-      <div class="service-item">
-        <h3>Creative Consulting</h3>
-        <p>Guiding clients through the process of turning loose ideas into coherent, powerful visual statements.</p>
-      </div>
-    </div>
-  </div>
-
-
-</section>
-<form id="contact-form" action="https://formspree.io/f/mzzkreow" method="POST">
-  <!-- aquí tu HTML con estilos y clases existentes -->
-</form>
-
-<section id="contact">
-  <div class="contact-wrapper">
-    <div class="contact-left">
-      <h2>Contact</h2>
-
-      <form id="contact-form" class="contact-form" action="https://formspree.io/f/mzzkreow" method="POST">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-
-      <p id="form-status" style="color:#999; margin-top:10px;"></p>
-    </div>
-
-    <div class="contact-right">
-      <p class="contact-text"></p>
-      <div class="social-links">
-        <a href="https://es.linkedin.com/in/manueldominguezdelaosa/es" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/dommanuel/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/34645795080" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("contact-form");
-  const status = document.getElementById("form-status");
-
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
-
-    const data = {
-      name: form.name.value,
-      email: form.email.value,
-      message: form.message.value,
-    };
-
-    try {
-      const response = await fetch(form.action, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        status.textContent = "Message sent successfully!";
-        form.reset();
-      } else {
-        status.textContent = "There was an error sending your message.";
-      }
-    } catch (error) {
-      status.textContent = "Network error. Please try again.";
-    }
-  });
-});
-</script>
-
-
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025, All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const fadeText = document.getElementById("scrollFade");
-
-  const fadeInStart = 200;   // empieza a aparecer
-  const fadeInEnd = 600;     // completamente visible
-  const fadeOutStart = 800;  // empieza a desaparecer
-  const fadeOutEnd = 1000;   // totalmente invisible
-
-  window.addEventListener("scroll", () => {
-    const y = window.scrollY;
-    let opacity = 0;
-    let translateY = 0; // desplazamiento vertical
-
-    if (y <= fadeInStart) {
-      opacity = 0;
-      translateY = 20; // empieza ligeramente más abajo
-    } else if (y > fadeInStart && y < fadeInEnd) {
-      const progress = (y - fadeInStart) / (fadeInEnd - fadeInStart);
-      opacity = progress;
-      translateY = 20 - progress * 20; // sube hasta posición original
-    } else if (y >= fadeInEnd && y <= fadeOutStart) {
-      opacity = 1;
-      translateY = 0;
-    } else if (y > fadeOutStart && y < fadeOutEnd) {
-      const progress = (y - fadeOutStart) / (fadeOutEnd - fadeOutStart);
-      opacity = 1 - progress;
-      translateY = -progress * 20; // se eleva un poco al desaparecer
-    } else {
-      opacity = 0;
-      translateY = -20;
-    }
-
-    fadeText.style.opacity = opacity;
-    fadeText.style.transform = `translateY(${translateY}px)`;
-  });
-});
-
-
-
-  // Burger menu functionality
-  const burgerMenu = document.getElementById('burgerMenu');
-  const mobileNav = document.getElementById('mobileNav');
-
-  burgerMenu.addEventListener('click', () => {
-    burgerMenu.classList.toggle('active');
-    mobileNav.classList.toggle('active');
-  });
-
-  // Close mobile nav when clicking on a link
-  const mobileNavLinks = mobileNav.querySelectorAll('a');
-  mobileNavLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      burgerMenu.classList.remove('active');
-      mobileNav.classList.remove('active');
-    });
-  });
-
-  // Close mobile nav when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!burgerMenu.contains(e.target) && !mobileNav.contains(e.target)) {
-      burgerMenu.classList.remove('active');
-      mobileNav.classList.remove('active');
-    }
-  });
-</script>
-</body>
+                window.addEventListener("click", (e) => {
+                    if (e.target === modal) {
+                        modal.style.display = "none";
+                        iframe.src = "";
+                    }
+                });
+            });
+        </script>
+    </body>
 </html>
